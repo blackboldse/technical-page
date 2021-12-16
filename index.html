@@ -1,15 +1,138 @@
-<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation Page</title>
-    <link rel="stylesheet" href="./technical.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Getting Started With JavaScript</title>
+        <link rel="stylesheet" href="./technical.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
+    </head>
+    <body>
+        <nav id="navbar">
+            <header class="nav-heading">JS Documentation</header>
+            <ul class="nav-links">
+                <li>
+                    <a href="#get-started" class="nav-link">Getting Started</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">JS Variables & Constants</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">JS console.log</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">JavaScript Data types</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">JavaScript Operators</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">javascript Comments</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">JS Type Conversions</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Getting Started</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Getting Started</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section">
+                <header>
+                    <h1 class="main-heading">Getting Started With JavaScript</h1>
+                </header>
+                <article class="main-desc" id="get-started">
+                    <p class="main-text">
+                        In this tutorial, you will learn about different ways to run JavaScript on your computer.
+                    </p>
+                    <p class="main-text">
+                        JavaScript is a popular programming language that has a wide range of applications.
+                    </p>
+                    <p class="main-text">
+                        JavaScript was previously used mainly for making webpages interactive such as form validation, animation, etc. Nowadays, JavaScript is also used in many other areas such as server-side development, mobile app development and so on.
+                    </p>
+                    <p class="main-text">
+                        Because of its wide range of applications, you can run JavaScript in several ways:
+                        <ul class="main-text-bullets">
+                            <li>Using console tab of web browsers</li>
+                            <li>Using Node.js</li>
+                            <li>By creating web pages</li>
+                        </ul>
+                    </p>
+                    <div class="main-content">
+                        <h2 class="main-content-console">
+                            1. Using Console Tab of Web Browsers
+                        </h2>
+                        <p class="main-text">
+                            All the popular web browsers have built-in JavaScript engines. Hence, you can run JavaScript on a browser. To run JavaScript on a browser:
+                            <ol>
+                                <li>Open your favorite browser (here we will use Google Chrome).</li>
+                                <li>Open the developer tools by right clicking on an empty area and select Inspect. <strong class="bold">Shortcut:</strong> <code>F12</code>.</li>
+                                <li>On the developer tools, go to the console tab. Then, write JavaScript code and press enter to run the code.</li>
+                            </ol>
+                        </p>
+                        <h2 class="main-content-node">
+                            2. Using Node.js
+                        </h2>
+                        <p class="main-text">
+                            Node is a back-end run-time environment for executing JavaScript code. To run JS using Node.js, follow these steps:
+                            <ol>
+                                <li>Install the latest version of Node.js.</li>
+                                <li>Install an IDE/Text Editor like Visual Studio Code. In VS code, <strong class="bold">create a file > write JS code > save it with .js extension.</strong></li>
+                                <li>Open up the terminal/command prompt > navigate to the file location > type node <code>hello.js</code> > hit enter.</li>
+                                <li>You will get output on the terminal.</li>
+                                <p class="note-tip">
+                                    <strong class="bold">Note</strong>: It is also possible to run JavaScript on the terminal/command prompt directly. For that, simply type <code>node</code> and press enter. Then you can start writing JS code.
+                                </p>
+                            </ol>
+                        </p>
+                        <h2 class="main-content-create">
+                            3. By Creating Web Pages
+                        </h2>
+                        <p class="main-text">
+                            JavaScript was initially created to make web pages interactive, that's why JavaScript and HTML go hand in hand. To run JS from a webpage, follow these steps:
+                            <ol>
+                                <li><strong class="bold">Open VS Code > Go to File > New File > Save it with .html extension. </strong>For example, <code>main.html</code>.</li>
+                                <li>Copy this doctype (minimum valid HTML code) and save it in the file.</li>
+                                <li>OSimilarly create a JS file, write the following JS code and save it with <strong class="bold">.js</strong> extension like main.js.</li>
+                                <li>From inside the HTML file, we need to link the main.js file to use it. You can achieve that by adding the following code in <code>main.html</code>.</li>
+                                <li>Open the <code>main.html</code> file using a browser.</li>
+                                <li>To check if our JS code ran or not, <strong class="bold">Right click on the web page > Inspect > Choose console tab.</strong></li>
+                            </ol>
+                            <p class="maint-text">
+                                Now that you know how to run JavaScript, let's start learning the fundamentals of JavaScript from the next tutorial.
+                            </p>
+                        </p>
+                    </div>
+                </article>
 
-
-</body>
+            </section>
+            <section class="main-section">
+                <header>JS Variables & Constants</header>
+            </section>
+            <section class="main-section">
+                <header></header>
+            </section>
+            <section class="main-section">
+                <header></header>
+            </section>
+            <section class="main-section">
+                <header></header>
+            </section>
+            <section class="main-section">
+                <header></header>
+            </section>
+            <section class="main-section">
+                <header></header>
+            </section>
+        </main>
+    </body>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>

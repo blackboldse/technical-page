@@ -8,6 +8,8 @@ pre,form,fieldset,input,textarea,p,blockquote,th,td,
 header,footer,aside,nav,article,figure,figcaption{
 	margin:0;
 	padding:0;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 fieldset,img{
 	border:0;
@@ -25,6 +27,8 @@ caption,th{
 h1,h2,h3,h4,h5,h6{
 	font-size:100%;
 	font-weight:400;
+    font-family: 'Poppins', sans-serif;
+    overflow-wrap: break-word;
 }
 q:before,q:after{
 	content:'';
