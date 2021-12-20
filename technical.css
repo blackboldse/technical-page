@@ -1,4 +1,7 @@
 /* Reset CSS */
+:root {
+	--color-blue-dark: #25265e;
+}
 
 *,*::before,*::after{
 	box-sizing:border-box;
@@ -10,6 +13,7 @@ header,footer,aside,nav,article,figure,figcaption{
 	padding:0;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+	font-family: 'Poppins', sans-serif;
 }
 fieldset,img{
 	border:0;
@@ -26,9 +30,10 @@ caption,th{
 }
 h1,h2,h3,h4,h5,h6{
 	font-size:100%;
-	font-weight:400;
+	font-weight:500;
     font-family: 'Poppins', sans-serif;
     overflow-wrap: break-word;
+	color: var(--color-blue-dark);
 }
 q:before,q:after{
 	content:'';
