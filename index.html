@@ -1,18 +1,21 @@
 <head>
-        <html lang="en">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Getting Started With JavaScript</title>
-        <link rel="stylesheet" href="./technical.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started With JavaScript</title>
+    <link rel="stylesheet" href="./technical.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-    </head>
-    <body>
+</head>
+<body>
+    <div class="contents">
         <nav id="navbar">
-            <header>JS Documentations</header>
+            <header>
+                <h1 class="navbar-title">JS Documentations</h1>
+            </header>
             <a href="#JS_Introduction" class="nav-link">JS Introduction</a>
             <a href="#JS_Control_Flow" class="nav-link">JS Control Flow</a>
             <a href="#JS_Functions" class="nav-link">JS Functions</a>
@@ -22,91 +25,98 @@
         </nav>
         <main id="main-doc">
             <section class="main-section" id="JS_Introduction">
-                <header>JS Introduction</header>
-                <ul class="main-section-index">
-                    <li>Getting Started</li>
-                    <li>JS Variables and Constants</li>
-                    <li>JS console.log</li>
-                    <li>JS Data Types</li>
-                    <li>JS Operators</li>
-                    <li>JS Comments</li>
-                    <li>JS Type Conversions</li>
-                </ul>
-                <div class="main-content">
-                    <h1 class="main-content-title">Getting Started With JavaScript</h1>
-                    <p class="main-content-txt txt-bold">In this tutorial, you will learn about different ways to run JavaScript on your computer.</p>
-                    <p class="main-content-txt">JavaScript is a popular programming language that has a wide range of applications.</p>
-                    <p class="main-content-txt">JavaScript was previously used mainly for making webpages interactive such as form validation, animation, etc. Nowadays, JavaScript is also used in many other areas such as server-side development, mobile app development and so on.</p>
-                    <p class="main-content-txt">Because of its wide range of applications, you can run JavaScript in several ways:</p>
-                    <ul class="main-content-desc">
+                <header class="main-editor-contents">
+                    <h1>JS Introduction</h1>
+                </header>
+                <div class="main-editor-contents">
+                    <h2>Getting Started With JavaScript</h2>
+                    <p class="txt-bold">In this tutorial, you will learn about different ways to run JavaScript on your computer.</p>
+                    <p>JavaScript is a popular programming language that has a wide range of applications.</p>
+                    <p>JavaScript was previously used mainly for making webpages interactive such as form validation, animation, etc. Nowadays, JavaScript is also used in many other areas such as server-side development, mobile app development and so on.</p>
+                    <p>Because of its wide range of applications, you can run JavaScript in several ways:</p>
+                    <ul>
                         <li>Using console tab of web browsers</li>
                         <li>Using Node.js</li>
                         <li>By creating web pages</li>
                     </ul>
-                    <h3 class="main-content-heading">1. Using Console Tab of Web Browsers</h3>
-                    <p class="main-content-txt">All the popular web browsers have built-in JavaScript engines. Hence, you can run JavaScript on a browser. To run JavaScript on a browser,</p>
-                    <ol class="main-content-desc">
+                    <h2>1. Using Console Tab of Web Browsers</h2>
+                    <p>All the popular web browsers have built-in JavaScript engines. Hence, you can run JavaScript on a browser. To run JavaScript on a browser,</p>
+                    <ol>
                         <li>Open your favorite browser (here we will use Google Chrome).</li>
-                        <li>Open the developer tools by right clicking on an empty area and select Inspect. Shortcut: F12.</li>
+                        <li>Open the developer tools by right clicking on an empty area and select Inspect. Shortcut: <code>F12</code>.</li>
                         <li>On the developer tools, go to the console tab. Then, write JavaScript code and press enter to run the code.</li>
                     </ol>
-                    <h3 class="main-content-heading">2. Using Node.js</h3>
-                    <p class="main-content-txt">Node is a back-end run-time environment for executing JavaScript code. To run JS using Node.js, follow these steps:</p>
-                    <ol class="main-content-desc">
-                        <li>Install the latest version of Node.js.</li>
-                        <li>Install an IDE/Text Editor like Visual Studio Code. In VS code, create a file > write JS code > save it with .js extension.</li>
-                        <li>Open up the terminal/command prompt > navigate to the file location > type node hello.js > hit enter.</li>
-                        <li>You will get output on the terminal.</li>
-                    </ol>
-                    <h3 class="main-content-heading">3. By Creating Web Pages</h3>
-                    <p class="main-content-txt">JavaScript was initially created to make web pages interactive, that's why JavaScript and HTML go hand in hand. To run JS from a webpage, follow these steps:</p>
-                    <ol class="main-content-desc">
-                        <li>Open VS Code > Go to File > New File > Save it with .html extension. For example, <code>main.html</code>.</li>
-                        <li>Copy this doctype (minimum valid HTML code) and save it in the file.
-                            <pre class="editor-contents">
-                                <code class="javascript hljs">
-                                    Updating
+                    <h2>2. Using Node.js</h2>
+                    <div class="main-editor-contents">
+                        <p>Node is a back-end run-time environment for executing JavaScript code. To run JS using <code>Node.js</code>, follow these steps:</p>
+                        <ol>
+                            <li>Install the latest version of
+                                <a href="https://nodejs.org/en/">Node.js.</a>
+                            </li>
+                            <li>Install an IDE/Text Editor like <a href="https://code.visualstudio.com/">Visual Studio Code</a>. In VS code, <strong>create a file > write JS code > save it with <code>.js</code> extension.</li></strong>
+                            <li><strong>Open up the terminal/command prompt > navigate to the file location > type node <code>hello.js</code> > hit enter.</strong></li>
+                            <li>You will get output on the terminal.</li>
+                        </ol>
+                    </div>
+                    <h2>3. By Creating Web Pages</h2>
+                    <div class="main-editor-contents">
+                        <p>JavaScript was initially created to make web pages interactive, that's why JavaScript and HTML go hand in hand. To run JS from a webpage, follow these steps:</p>
+                        <ol>
+                            <li><strong>Open VS Code > Go to File > New File > Save </strong>it with <code>.html</code> extension. For example, <code>main.html</code>.</li>
+                            <li>Copy this doctype (minimum valid HTML code) and save it in the file.
+                            </li>
+                            <li>Similarly create a JS file, write the following JS code and save it with .js extension like <code>main.js</code>.</li>
+                            <div class="main-code">
+                                <code>
+                                    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'hello world'</span>);
                                 </code>
-                            </pre>
-                        </li>
-                        <li>Similarly create a JS file, write the following JS code and save it with .js extension like <code>main.js</code>.</li>
-                        <code class="editor-contents pre code">
-                            console.log('hello world');
-                        </code>
-                        <li>From inside the HTML file, we need to link the <code>main.js</code> file to use it. You can achieve that by adding the following code in <code>main.html</code>.</li>
-                        <li>Open the <code>main.html</code> file using a browser.</li>
-                        <li>To check if our JS code ran or not, Right click on the web page > Inspect > Choose console tab.</li>
-                    </ol>
-                    <p class="main-content-txt">Now that you know how to run JavaScript, let's start learning the fundamentals of JavaScript from the next tutorial.</p>
-                    <h1 class="main-content-heading">JavaScript console.log</h1>
-                        <p class="main-content-txt">In this tutorial, you will learn about JavaScript console with the help of examples.</p>
-                        <code class="editor-contents">
-                            let sum = 44;
-                            console.log(sum);   // 44
-                        </code>
-                        <p class="main-content-txt">All modern browsers have a web console for debugging. The console.log() method is used to write messages to these consoles. For example,</p>
-                        <p class="main-content-txt">When you run the above code, 44 is printed on the console.</p>
-                    <h1 class="main-content-heading">JS Data Types</h1>
-                        <p class="main-content-txt">There are different types of data that we can use in a JavaScript program. For example,</p>
-                        <code class="editor-contents">
-                            const x = 5;
-                            const y = "Hello";
-                        </code>
-                        <p class="main-content-txt">Here,</p>
-                        <li><code>5</code> is an integer data.</li>
-                        <li><code>"Hello"</code> is a string data.</li>
-                        <h1 class="main-content-heading">JS Operators</h1>
-                        <p class="main-content-txt txt-bold">In this tutorial, you will learn about different operators available in JavaScript and how to use them with the help of examples.</p>
-                        <h3 class="main-content-heading">What is an Operators?</h3>
-                        <p class="main-content-txt">In JavaScript, an operator is a special symbol used to perform operations on operands (values and variables). For example,</p>
-                        <code class="editor-contents">
-                            2 + 3; // 5
-                        </code>
+                            </div>
+                            <li>From inside the HTML file, we need to link the <code>main.js</code> file to use it. You can achieve that by adding the following code in <code>main.html</code>.</li>
+                            <li>Open the <code>main.html</code> file using a browser.</li>
+                            <li>To check if our JS code ran or not, Right click on the web page > Inspect > Choose console tab.</li>
+                        </ol>
+                        <p>Now that you know how to run JavaScript, let's start learning the fundamentals of JavaScript from the next tutorial.</p>
+                    </div>
+                    <div class="main-editor-contents">
+                        <h2>JavaScript console.log</h2>
+                            <p>In this tutorial, you will learn about JavaScript console with the help of examples.</p>
+                            <div class="main-code">
+                                <code>
+                                    <span class="hljs-keyword">let</span> sum = <span class="hljs-number">44</span>;
+                                    <span class="hljs-keyword">console</span>.log(sum);   <span class="hljs-comment">// 44</span>
+                                </code>
+                            </div>
+                            <p>All modern browsers have a web console for debugging. The <code>console.log()</code> method is used to write messages to these consoles. For example,</p>
+                            <p>When you run the above code, 44 is printed on the console.</p>
+                    </div>
+                        <h2>JS Data Types</h2>
+                            <p>There are different types of data that we can use in a JavaScript program. For example,</p>
+                            <div class="main-code">
+                                <code>
+                                    <span class="hljs-keyword">const</span> x = <span class="hljs-number">5</span>;
+                                    <span class="hljs-keyword">const</span> y = <span class="hljs-string">"Hello"</span>;
+                                </code>
+                            </div>
+                            <p>Here,</p>
+                            <li><code>5</code> is an integer data.</li>
+                            <li><code>"Hello"</code> is a string data.</li>
+                        <h2>JS Operators</h2>
+                            <p class="txt-bold">In this tutorial, you will learn about different operators available in JavaScript and how to use them with the help of examples.</p>
+                            <h3>What is an Operators?</h3>
+                            <p>In JavaScript, an operator is a special symbol used to perform operations on operands (values and variables). For example,</p>
+                            <div class="main-code">
+                                <code class="hljs">
+                                    <span class="hljs-number">2</span> + <span class="hljs-number">3</span>; <span class="hljs-comment">// 5</span>
+                                </code>
+                            </div>
+                            <p>Here <code>+</code> is an operator that performs addition, and <code>2</code> and <code>3</code> are operands.</p>
                 </div>
             </section>
             <section class="main-section" id="JS_Control_Flow">
-                <header>JS Control Flow</header>
-                <ul class="main-index">
+                <header class="main-editor-contents">
+                    <h1>JS Control Flow</h1>
+                </header>
+                <ul>
                     <li>JS Comparison Operators</li>
                     <li>JS if else Statement</li>
                     <li>JS for loop</li>
@@ -117,8 +127,10 @@
                 </ul>
             </section>
             <section class="main-section" id="JS_Functions">
-                <header>JS Functions</header>
-                <ul class="main-index">
+                <header class="main-editor-contents">
+                    <h1>JS Functions</h1>
+                </header>
+                <ul>
                     <li>JS Functions</li>
                     <li>Variable Scope</li>
                     <li>JS Hoisting</li>
@@ -126,8 +138,10 @@
                 </ul>
             </section>
             <section class="main-section" id="JS_Objects">
-                <header>JS Objects</header>
-                <ul class="main-index">
+                <header class="main-editor-contents">
+                    <h1>JS Objects</h1>
+                </header>
+                <ul>
                     <li>JS Objects</li>
                     <li>JS Methods and this</li>
                     <li>JS Constructor</li>
@@ -136,8 +150,10 @@
                 </ul>
             </section>
             <section class="main-section" id="JS_Types">
-                <header>JS Types</header>
-                <ul class="main-index">
+                <header class="main-editor-contents">
+                    <h1>JS Types</h1>
+                </header>
+                <ul>
                     <li>JS Array</li>
                     <li>JS Multidimensional Array</li>
                     <li>JS String</li>
@@ -147,29 +163,30 @@
                 </ul>
             </section>
             <section class="main-section" id="Exceptions_and_Modules">
-                <header>Exceptions and Modules</header>
-                <div class="main-content" id="JS_try_catch_Statement">
-                    <h1 class="main-content-title">JavaScript try...catch...finally Statement</h1>
-                    <p class="main-content-txt txt-bold">In this tutorial, you will learn about the try...catch...finally statements to handle exceptions in JavaScript with the help of examples.</p>
-                    <p class="main-content-txt">The <code>try</code>, <code>catch</code> and <code>finally</code> blocks are used to handle exceptions (a type of an error). Before you learn about them, you need to know about the types of errors in programming.</p>
-                    <h2 class="main-content-heading">Types of Errors</h2>
-                    <p class="main-content-txt">In programming, there can be two types of errors in the code:</p>
-                    <p class="main-content-txt"><strong>Syntax Error</strong>: Error in the syntax. For example, if you write consol.log('your result');, the above program throws a syntax error. The spelling of console is a mistake in the above code.</p>
-                    <p class="main-content-txt"><strong>Runtime Error</strong>: This type of error occurs during the execution of the program. For example, calling an invalid function or a variable.</p>
-                    <p class="main-content-txt">These errors that occur during runtime are called. Now, let's see how you can handle these exceptions.</p>
+                <header class="main-editor-contents">
+                    <h1>Exceptions and Modules</h1>
+                </header>
+                <div class="main-editor-contents">
+                    <h2>JavaScript try...catch...finally Statement</h2>
+                    <p class="txt-bold">In this tutorial, you will learn about the try...catch...finally statements to handle exceptions in JavaScript with the help of examples.</p>
+                    <p>The <code>try</code>, <code>catch</code> and <code>finally</code> blocks are used to handle exceptions (a type of an error). Before you learn about them, you need to know about the types of errors in programming.</p>
+                    <h2>Types of Errors</h2>
+                    <p>In programming, there can be two types of errors in the code:</p>
+                    <p><strong>Syntax Error</strong>: Error in the syntax. For example, if you write consol.log('your result');, the above program throws a syntax error. The spelling of console is a mistake in the above code.</p>
+                    <p><strong>Runtime Error</strong>: This type of error occurs during the execution of the program. For example, calling an invalid function or a variable.</p>
+                    <p>These errors that occur during runtime are called. Now, let's see how you can handle these exceptions.</p>
                 </div>
-
-                <div class="main-content" id="JS_throw">
-                    <h1 class="main-content-title">JavaScript throw Statement</h1>
-                    <p class="main-content-txt txt-bold">In this tutorial, you will learn about JavaScript throw statements with the help of examples.</p>
-                    <p class="main-content-txt">In the previous tutorial, you learned to handle exceptions using JavaScript try..catch statement. The try and catch statements handle exceptions in a standard way which is provided by JavaScript. However, you can use the <code>throw</code> statement to pass user-defined exceptions.</p>
-                    <h2 class="main-content-heading">JavaScript throw statement</h2>
-                    <p class="main-content-txt">In JavaScript, the <code>throw</code> statement handles user-defined exceptions. For example, if a certain number is divided by 0, and if you need to consider <code>Infinity</code> as an exception, you can use the <code>throw</code> statement to handle that exception.</p>
-                    <p class="main-content-txt"><strong>Runtime Error</strong>: This type of error occurs during the execution of the program. For example, calling an invalid function or a variable.</p>
-                    <p class="main-content-txt">These errors that occur during runtime are called. Now, let's see how you can handle these exceptions.</p>
+                <div class="main-editor-contents">
+                    <h2>JavaScript throw Statement</h2>
+                    <p class="txt-bold">In this tutorial, you will learn about JavaScript throw statements with the help of examples.</p>
+                    <p>In the previous tutorial, you learned to handle exceptions using JavaScript try..catch statement. The try and catch statements handle exceptions in a standard way which is provided by JavaScript. However, you can use the <code>throw</code> statement to pass user-defined exceptions.</p>
+                    <h2>JavaScript throw statement</h2>
+                    <p>In JavaScript, the <code>throw</code> statement handles user-defined exceptions. For example, if a certain number is divided by <strong>0</strong>, and if you need to consider <code>Infinity</code> as an exception, you can use the <code>throw</code> statement to handle that exception.</p>
+                    <p><strong>Runtime Error</strong>: This type of error occurs during the execution of the program. For example, calling an invalid function or a variable.</p>
+                    <p>These errors that occur during runtime are called. Now, let's see how you can handle these exceptions.</p>
                 </div>
-
             </section>
         </main>
-    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </div>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
